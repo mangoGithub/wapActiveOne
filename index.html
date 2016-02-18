@@ -1,0 +1,269 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>带着投米去旅行——投米网</title>
+	<meta name="description" content="投米网 - 专注于城市白领的金融服务提供商">
+	<meta name="keywords" content="投米网,财富管理、普惠金融、金融、基金、借款、贷款、高收益、高流动性、零投宝、合约宝、灵活理财">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/hx.css">
+</head>
+<body>
+	<div id="wrapper" class="content">
+		<div class="wrapper">
+			<ul class="container">
+				<!-- 第一屏 -->
+				<li class="page page0">
+					<div class="content">              
+						<p>带着投米去旅行</p>
+						<p>"我在这里，你在哪里？"</p>
+						<p></p>
+						<p></p>
+						<p>
+							<em></em>
+							<i></i>
+						</p>
+						<h2>
+							<a href="#">toumi.yinxi.com</a>
+						</h2>
+						<div class="icos_arrow"></div>
+			        </div>
+				</li>
+				<!-- 第一屏-->
+				<li class="page page1">
+					<div class="content hide common">
+						<i></i>
+						<p></p>
+						<h2>
+							<span>
+								好莱坞芬芳的空气<br>
+								山坡洒落的阳光<br>
+								正如想象中灿烂耀眼
+							</span>
+							<span>我在洛杉矶，你在哪里</span>
+						</h2>
+						<div class="icos_arrow"></div>
+					</div>
+				</li>
+				<li class="page page2">
+					<div class="content hide common">
+						<i></i>
+						<p></p>
+						<h2>
+							<span>
+								伴着浓郁的咖啡香气<br>
+								仰望巴黎的天空<br>
+								静享这一刻的美好
+							</span>
+							<span>我在巴黎，你在哪里</span>
+						</h2>
+						<div class="icos_arrow"></div>
+			        </div>
+				</li>
+				<li class="page page3">
+					<div class="content hide common">
+						<i></i>
+						<p></p>
+						<h2>
+							<span>
+								石像，壁画，金字塔<br>
+								穿梭时空的千年文明<br>
+								过去，现在，未来
+							</span>
+							<span>我在埃及，你在哪里</span>
+						</h2>
+						<div class="icos_arrow"></div>
+			        </div>
+				</li>
+				<li class="page page4">
+					<div class="content hide">
+						<i></i>
+						<div class="line">
+							<p>
+								<span>带着投米</span>
+								<strong>去</strong>
+								<em>你的旅行！</em>
+							</p>
+							<p></p>
+							<p></p>
+							<p>我在路上，你在哪里</p>
+						</div>
+						<div class="icos_arrow"></div>
+			        </div>
+				</li>
+				<!-- wei -->
+				<li class="page page5">
+					<div class="content hide">
+						<div class="tcode">
+							<a href="javascript:;">
+								<img src="img/code.png" alt="tcode">
+							</a>
+						</div>
+						<em>
+							↑ 扫一扫关注投米 ↑<br>
+							( 微信号: toumiwang )
+						</em>
+						<div class="twobtn">
+							<a href="javascript:;">分享好礼</a>
+							<a href="http://www.baidu.com/" target="_blank">我要机票</a>
+						</div>
+						<div class="mustfoot">
+							<p>
+								带着投米去旅行，晒出你的旅行照，<br>
+								喝免费饮料，看免费电影，拿免费机票！
+							</p>
+							<p></p>
+							<h2>
+								<a href="http://toumi.yixin.com/mb_index.shtml">toumi.yinxi.com</a>
+							</h2>
+						</div>
+						<div id="marsk">
+							
+						</div>
+						<div id="for_marsk">
+							<p></p>
+							<p></p>
+						</div>
+					</div>
+				</li>
+				<!-- wei -->
+			</ul>
+		</div>
+	</div>
+	<div class="landscape">
+        <div class="iphone"></div>
+        <div class="iphone_text">请将屏幕竖向浏览</div>
+    </div>
+	<script type="text/javascript" src="halo.js"></script>
+	<script type="text/javascript">
+
+        var wrapper = document.getElementById('wrapper');
+        var aBtn = document.getElementsByClassName('page5')[0].getElementsByTagName('a');
+        var oMarsk = document.getElementById('marsk');
+        var oForMarsk = document.getElementById('for_marsk');
+
+        halo.use('yscroll', 'loader', function(m){
+	        var loader = new m.loader(['img/big1.png','img/word.png','img/big2.png','img/big3.png']).loadend(function(){
+	            if(this._index == 4){      
+	                m.removeClass(wrapper, 'hide');
+	            }
+	        }).complete(function(){
+	            var _last_idx = 0;
+	            var wrapper_scroll = new m.yscroll('.wrapper', {
+	                Scontainer : '.container',
+	                hScroll : false,
+	                vScroll : true,
+	                momentum : true,
+	                bounce : false,
+	                snap: true,
+	                scrollBefore: function(name, e){
+	                	if(name.target == aBtn[1]){
+	                		oMarsk.style.display = "block";
+	                		oForMarsk.style.display = "block";
+	                	}else if(name.target == oForMarsk){
+	                		oMarsk.style.display = "none";
+	                		oForMarsk.style.display = 'none';
+	                	}else if(name.target == aBtn[2]){
+	                		// window.location = "http://www.baidu.com/";
+	                		window.open("http://www.baidu.com/",'')
+	                	}else if(name.target == aBtn[3]){
+	                		window.location = "http://toumi.yixin.com/mb_index.shtml";
+	                		// window.open("http://toumi.yixin.com/mb_index.shtml",'')
+	                	}
+	                	oForMarsk.ontouchstart = function(){
+	                		this.style.display = 'none';
+	                		oMarsk.style.display = 'none';
+	                	}
+	                },
+	                onScroll: function(name, obj){
+	                	
+	                },
+	                onTouchEnd: function(name, obj){	                	
+	                },
+	                scrollEnd: function(index){
+	                	if(index == 4){
+	                		oMarsk.style.display = "none";
+	                		oForMarsk.style.display = 'none';
+	                	}
+	                	var pages = this.$li;
+	                	for (var i = 0; i < pages.length; i++) {
+	                		halo.util.addClass(pages[i].querySelector('.content'), 'hide');      
+	                	};
+	                	halo.util.removeClass(pages[index].querySelector('.content'), 'hide');
+	                }
+	            });
+	        });
+        });
+
+		// 分享--------------//
+		var dataForWeixin={
+		   appId: "",
+		   MsgImg: "http://10.105.76.147/a/img/share.jpg",
+		   TLImg: "http://10.105.76.147/a/img/share.jpg",
+		   url: "http://10.105.76.147/a/",
+		   title: "#带着投米去旅行#我在这里, 你在哪里!",
+		   desc: "晒出你的旅行照：喝免费饮料，看免费电影，拿免费机票！带着投米，去你的旅行！",
+		   fakeid: "",
+		   callback: function(){}
+		};
+		(function(){
+		   var onBridgeReady=function(){
+		   //发送给朋友
+		   WeixinJSBridge.on('menu:share:appmessage', function(argv){
+		      WeixinJSBridge.invoke('sendAppMessage',{
+		         "appid":dataForWeixin.appId,
+		         "img_url":dataForWeixin.MsgImg,
+		         "img_width":"120",
+		         "img_height":"120",
+		         "link":dataForWeixin.url,
+		         "desc":dataForWeixin.desc,
+		         "title":dataForWeixin.title
+		      }, function(res){(dataForWeixin.callback)();});
+		   });
+		   //发送到朋友圈
+		   WeixinJSBridge.on('menu:share:timeline', function(argv){
+		      (dataForWeixin.callback)();
+		      WeixinJSBridge.invoke('shareTimeline',{
+		         "img_url":dataForWeixin.TLImg,
+		         "img_width":"120",
+		         "img_height":"120",
+		         "link":dataForWeixin.url,
+		         "desc":dataForWeixin.desc,
+		         "title":dataForWeixin.title
+		      }, function(res){});
+		   });
+		   //分享到微博
+		   WeixinJSBridge.on('menu:share:weibo', function(argv){
+		      WeixinJSBridge.invoke('shareWeibo',{
+		         "content":dataForWeixin.title,
+		         "url":dataForWeixin.url
+		      }, function(res){(dataForWeixin.callback)();});
+		   });
+		   //分享到facebook
+		   WeixinJSBridge.on('menu:share:facebook', function(argv){
+		      (dataForWeixin.callback)();
+		      WeixinJSBridge.invoke('shareFB',{
+		         "img_url":dataForWeixin.TLImg,
+		         "img_width":"120",
+		         "img_height":"120",
+		         "link":dataForWeixin.url,
+		         "desc":dataForWeixin.desc,
+		         "title":dataForWeixin.title
+		      }, function(res){});
+		   });
+		};
+		if(document.addEventListener){
+		   document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+		}else if(document.attachEvent){
+		   document.attachEvent('WeixinJSBridgeReady'   , onBridgeReady);
+		   document.attachEvent('onWeixinJSBridgeReady' , onBridgeReady);
+		}
+		})();
+
+
+	</script>
+</body>
+</html>
